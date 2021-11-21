@@ -398,6 +398,58 @@ ul {
   fill: var(--section-color);
 }
 
+/* Постоянные клиенты----------------------*/
+
+.section-comand-title-clients {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.section-comand-title-clients {
+  margin-top: 94px;
+}
+
+.clients-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.clients-list-link {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-list-link + .clients-list-link {
+  margin-left: 30px;
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border: solid 1px #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: solid 1px var(--accent-text-color);
+}
+
+.clients-link:hover .clients-link-icon,
+.clients-link:focus .clients-link-icon {
+  fill: var(--accent-text-color);
+}
+
 /* Футер----------------------------------- */
 
 .adress {
