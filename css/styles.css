@@ -122,11 +122,11 @@ ul {
   text-decoration: none;
 }
 
-.item:hover {
+.contact-item:hover {
   color: var(--accent-text-color);
 }
 
-.item:hover .contact-icon-mail {
+.contact-item:hover .contact-icon-mail {
   color: var(--accent-text-color);
 }
 
@@ -204,6 +204,8 @@ ul {
 /* Hero------------------------------------ */
 
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   display: flex;
@@ -216,7 +218,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100%;
+  max-width: 1600px;
   height: 600px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -450,16 +452,27 @@ ul {
 
 /* Футер----------------------------------- */
 
+.footer {
+  display: flex;
+}
+.footer .container {
+  display: flex;
+}
+
 .footer-social {
-  display: flex
-  margin-left: 90px;
-  padding-top: 75px;
+  margin-left: 0px;
+  padding-top: 12px;
+  padding-left: 70px;
 }
 
 .footer-social-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 .adress {
   margin-top: 20px;
@@ -468,14 +481,12 @@ ul {
 
 .footer {
   display: flex;
-  justify-content
-
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
 }
 
-.page-footer-color-logo {
+.footer .page-footer-color-logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -573,10 +584,15 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .comand-icon {
   fill: #afb1b8;
+}
+
+.comand-footer-icon {
+  fill: var(--text-color);
 }
 
 .comand-social-link:hover,
