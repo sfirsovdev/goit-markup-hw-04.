@@ -61,6 +61,10 @@ ul {
   width: 1200px;
 }
 
+.container-footer {
+  display: flex;
+}
+
 .button {
   cursor: pointer;
 }
@@ -444,24 +448,28 @@ ul {
   fill: var(--accent-text-color);
 }
 
-.footer-icon {
-  padding-top: 10px;
+/* Футер----------------------------------- */
+
+.footer-social {
+  display: flex
+  margin-left: 90px;
+  padding-top: 75px;
 }
 
-.footer-icon-title {
+.footer-social-title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Футер----------------------------------- */
-
 .adress {
   margin-top: 20px;
   font-style: normal;
 }
 
 .footer {
+  display: flex;
+  justify-content
+
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
