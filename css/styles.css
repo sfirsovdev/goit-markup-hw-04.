@@ -122,23 +122,10 @@ ul {
   color: var(--accent-text-color);
 }
 
-.item {
-  display: flex;
-  text-align: center;
+.item:hover .contact-icon-mail {
+  color: var(--accent-text-color);
 }
 
-.item-phone {
-  cursor: pointer;
-  display: flex;
-  text-align: center;
-  margin-left: 30px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--main-text-color-text-color);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
 /* Nav------------------------------------  */
 
 .site-nav {
@@ -185,10 +172,11 @@ ul {
 }
 
 .contact .item + .item {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .contact-icon-mail {
+  margin-right: 10px;
   width: 16px;
   height: 12px;
 }
@@ -224,8 +212,9 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 100%;
   height: 600px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -353,6 +342,11 @@ ul {
   background-color: var(--text-color);
 }
 
+.item-our-comand {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .item-our-comand .img {
   display: block;
 }
@@ -450,6 +444,16 @@ ul {
   fill: var(--accent-text-color);
 }
 
+.footer-icon {
+  padding-top: 10px;
+}
+
+.footer-icon-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Футер----------------------------------- */
 
 .adress {
@@ -538,6 +542,45 @@ ul {
   opacity: 0.6;
 }
 
+/* Присоединяйтесь--------------- */
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.comand-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comand-icon {
+  fill: #afb1b8;
+}
+
+.comand-social-link:hover,
+.comand-social-link:focus {
+  background-color: var(--accent-text-color);
+}
+
+.comand-social-link:hover .comand-icon,
+.comand-social-link:focus .comand-icon {
+  fill: var(--section-color);
+}
+
 /* CSS Porfolio ----------------------------*/
 
 /* Body---------------------------------  */
@@ -592,6 +635,8 @@ ul {
 .button-portfolio:focus {
   background: var(--accent-text-color);
   color: var(--text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-name {
